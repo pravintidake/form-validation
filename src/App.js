@@ -6,16 +6,22 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { CartProvider } from "react-use-cart";
+import Footer from './components/Footer/Footer';
+
 
 const App = () => {
   return (
     <>
+      <CartProvider>
       <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="register" element={<RegisterForm />} />
           <Route path="login" element={<LoginForm />} />
         </Routes>
+        <Footer />
+      </CartProvider>
     </>
   );
 };

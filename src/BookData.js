@@ -45,34 +45,45 @@ export const popularProducts = [
     {
         id: 1,
         img: "https://m.media-amazon.com/images/I/81kkQxSf4YL._AC_UY218_.jpg",
-        title: "Book Lover",
+        title: "React For Beginners",
+        price: 140,
     },
     {
         id: 2,
         img: "https://m.media-amazon.com/images/I/816HBXHJsaL._AC_UY218_.jpg",
+        title: "React from Scratch",
+        price: 100,
     },
     {
         id: 3,
         img: "https://m.media-amazon.com/images/I/811wuvCKC2S._AC_UY218_.jpg",
+        title: "Power of Mind",
+        price: 180,
     },
     {
         id: 4,
         img: "https://m.media-amazon.com/images/I/81Ke+JJ1b5L._AC_UY218_.jpg",
+        title: "Java Programming",
+        price: 405,
     },
     {
         id: 5,
         img: "https://m.media-amazon.com/images/I/81WfDv1F96L._AC_UY218_.jpg",
+        title: "Theory of CS",
+        price: 340,
     },
     {
         id: 6,
         img: "https://m.media-amazon.com/images/I/41qyHrI3ukL._AC_UY218_.jpg",
+        title: "DS and Algorithm",
+        price: 120
     },
-    {
-        id: 7,
-        img: "https://m.media-amazon.com/images/I/51YxkXyzhqL._AC_UY218_.jpg",
-    },
-    {
-        id: 8,
-        img: "https://images-eu.ssl-images-amazon.com/images/I/81yswtkIMsL._AC_UL160_SR160,160_.jpg",
-    },
+    // {
+    //     id: 7,
+    //     img: "https://m.media-amazon.com/images/I/51YxkXyzhqL._AC_UY218_.jpg",
+    // },
+    // {
+    //     id: 8,
+    //     img: "https://images-eu.ssl-images-amazon.com/images/I/81yswtkIMsL._AC_UL160_SR160,160_.jpg",
+    // },
 ]
