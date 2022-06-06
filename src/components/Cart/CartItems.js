@@ -29,28 +29,28 @@ const CartItems = (item) => {
                         <div className="modal-body">
                             <table className="table table-light m-0">
                                 <tbody>
-                                    {items.map((item, index) => {
+                                    {items.map(({ id, title, img, price, quantity, }, index) => {
                                         return (
                                             <tr key={index} className="text-center">
                                                 <td>
-                                                    <img src={item.img} style={{ height: "6rem" }} />
+                                                    <img src={img} alt={img} style={{ height: "6rem" }} />
                                                 </td>
-                                                <td>{item.title}</td>
-                                                <td><i class="fa-solid fa-indian-rupee-sign"></i>{item.price}</td>
+                                                <td>{title}</td>
+                                                <td><i class="fa-solid fa-indian-rupee-sign"></i>{price}</td>
                                                 <td>
                                                     <button
                                                         onClick={() =>
-                                                            updateItemQuantity(item.id, item.quantity - 1)
+                                                            updateItemQuantity(id, quantity - 1)
                                                         }
                                                         className="btn btn-info ms-2"
                                                     >
                                                         {" "}
                                                         <i class="fa-solid fa-minus"></i>{" "}
                                                     </button>
-                                                    <span className="p-2 fw-bold">  {item.quantity}</span>
+                                                    <span className="p-2 fw-bold">  {quantity}</span>
                                                     <button
                                                         onClick={() =>
-                                                            updateItemQuantity(item.id, item.quantity + 1)
+                                                            updateItemQuantity(id, quantity + 1)
                                                         }
                                                         className="btn btn-info ms-2"
                                                     >
@@ -61,7 +61,7 @@ const CartItems = (item) => {
                                                 </td>
                                                 <td>
                                                     <button
-                                                        onClick={() => removeItem(item.id)}
+                                                        onClick={() => removeItem(id)}
                                                         className="btn btn-danger ms-2"
                                                     >
                                                         {" "}

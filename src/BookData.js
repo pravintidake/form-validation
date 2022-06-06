@@ -46,44 +46,78 @@ export const popularProducts = [
         id: 1,
         img: "https://m.media-amazon.com/images/I/81kkQxSf4YL._AC_UY218_.jpg",
         title: "React For Beginners",
+        author: "ABCD",
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, error!",
         price: 140,
     },
     {
         id: 2,
         img: "https://m.media-amazon.com/images/I/816HBXHJsaL._AC_UY218_.jpg",
         title: "React from Scratch",
+        author: "ABCD",
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, error!",
         price: 100,
     },
     {
         id: 3,
         img: "https://m.media-amazon.com/images/I/811wuvCKC2S._AC_UY218_.jpg",
         title: "Power of Mind",
+        author: "ABCD",
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, error!",
         price: 180,
     },
     {
         id: 4,
         img: "https://m.media-amazon.com/images/I/81Ke+JJ1b5L._AC_UY218_.jpg",
         title: "Java Programming",
+        author: "ABCD",
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, error!",
         price: 405,
     },
     {
         id: 5,
         img: "https://m.media-amazon.com/images/I/81WfDv1F96L._AC_UY218_.jpg",
         title: "Theory of CS",
+        author: "ABCD",
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, error!",
         price: 340,
     },
     {
         id: 6,
         img: "https://m.media-amazon.com/images/I/41qyHrI3ukL._AC_UY218_.jpg",
         title: "DS and Algorithm",
+        author: "ABCD",
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, error!",
         price: 120
     },
-    // {
-    //     id: 7,
-    //     img: "https://m.media-amazon.com/images/I/51YxkXyzhqL._AC_UY218_.jpg",
-    // },
-    // {
-    //     id: 8,
-    //     img: "https://images-eu.ssl-images-amazon.com/images/I/81yswtkIMsL._AC_UL160_SR160,160_.jpg",
-    // },
 ]
+
+export const user = [
+    {
+        id: 1,
+        name: "Mark Wood",
+        email: "markwood@gmail.com",
+        phone: "9939019119",
+        address: "Pune",
+        role: "Admin",
+        password: "1234"
+    },
+    {
+        id: 2,
+        name: "Emma Stone",
+        email: "emmastone@gmail.com",
+        phone: "7839019119",
+        address: "Mumbai",
+        role: "User",
+        password: "1234"
+    },
+    {
+        id: 3,
+        name: "Johny Depp",
+        email: "johnydepp@gmail.com",
+        phone: "8839019119",
+        address: "Nagpur",
+        role: "User",
+        password: "1234"
+    },
+];

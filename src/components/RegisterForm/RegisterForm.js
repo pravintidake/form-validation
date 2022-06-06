@@ -58,7 +58,7 @@ const Form = () => {
                             <button type="submit" className="btn btn-primary">Register</button>
                         </form>
 
-                        <p className="mt-3">Already registered?  <Link className="text-primary" to="/login"> Click Here</Link> to Login</p>
+                        <p className="mt-3">Already registered? <Link className="text-primary" to="/login"> Click Here</Link> to Login</p>
                     </div>
                 </div>
             </div>

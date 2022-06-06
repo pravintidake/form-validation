@@ -1,4 +1,4 @@
-export default function validate(values) {
+const validate = (values) => {
     let errors = {};
     if (!values.email) {
       errors.email = 'Email address is required';
@@ -12,4 +12,6 @@ export default function validate(values) {
     }
  
     return errors;
-  };
+}
+
+export default validate

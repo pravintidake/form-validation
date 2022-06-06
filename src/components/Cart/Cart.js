@@ -1,19 +1,22 @@
 import React from 'react'
 import { useCart } from "react-use-cart";
 
-const Cart = (props) => {
+const Cart = ({ id, image, title, item }) => {
     const { addItem } = useCart();
-    console.log(props.item)
+    // const { id, image, title, item } = (props);
     return (
         <>
-            <div className="col-lg-4 col-md-12 col-sm-12" key={props.id}>
+            <div className="col-lg-4 col-md-12 col-sm-12" key={id}>
                 <div className="card mt-5">
                     <div className="card-body">
-                        <img src={props.image} alt={props.image} style={{ width: '100%', height: '200px' }} />
+                        <img src={image} alt={image} style={{ width: '100%', height: '200px' }} />
                     </div>
-                    <div className="card-footer d-flex justify-content-between align-items-center">
-                        <h6>{props.title}</h6>
-                        <button onClick={() => addItem(props.item)} data-bs-toggle="modal" data-bs-target="#cartModal" className="btn btn-outline-primary"><i className="fa-solid fa-cart-plus"></i> Add Cart</button>
+                    <div className="card-footer d-flex align-items-center flex-column">
+                        <h6>{title}</h6>
+                        <div className="buttons w-100 d-flex justify-content-between">
+                            <button onClick={() => addItem(item)} data-bs-toggle="modal" data-bs-target="#cartModal" className="btn btn-outline-primary"><i className="fa-solid fa-cart-plus"></i> Add Cart</button>
+                            <button className="btn btn-outline-info"><i className="fa-solid fa-cart-plus"></i> View Book</button>
+                        </div>
                     </div>
                 </div>
             </div>
